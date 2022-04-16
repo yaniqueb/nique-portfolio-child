@@ -1,7 +1,7 @@
 {
   "name": "understrap-child",
   "version": "1.1.0",
-  "description": "Nique Portfolio: https://github.com/understrap/understrap",
+  "description": "Nique Portfolio: https://github.com/yaniqueb/Nique-Portfolio.git",
   "main": "index.js",
   "scripts": {
     "bs": "browser-sync start --config src/build/browser-sync.config.js",
