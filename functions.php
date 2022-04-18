@@ -87,3 +87,8 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+// Includes php files from lib folder.
+foreach (glob( dirname(__FILE__) . '/lib/*.php' ) as $file ){
+	include $file;
+}
