@@ -11,25 +11,25 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary " aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
 
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="l-header__wrapper site-wrapper <?php echo esc_attr( $container ); ?>">
 
 		<!-- Your site title as branding in the menu -->
 		<?php if ( ! has_custom_logo() ) { ?>
 
 			<?php if ( is_front_page() && is_home() ) : ?>
 
-				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="l-header__title navbar-brand mb-0"><a class="l-header__link" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
 
 			<?php else : ?>
 
-				<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+				<h3 class="l-header__title navbar-brand mb-0"> <a class="l-header__link" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a> Web Developer</h3>
 
 			<?php endif; ?>
 
@@ -40,8 +40,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 		?>
 		<!-- end custom logo -->
 
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-			<span class="navbar-toggler-icon"></span>
+
+
+
+		<button class="navbar-toggler toggleBtn" id="js-toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+			<span class="navbar-toggler-icon">
+				<div class="toggleBtn--bar1"></div>
+				<div class="toggleBtn--bar2"></div>
+				<div class="toggleBtn--bar3"></div>
+			</span>
 		</button>
 
 		<!-- The WordPress Menu goes here -->

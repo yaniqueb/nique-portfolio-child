@@ -1,0 +1,117 @@
+/* ================================= 
+project
+==================================== */
+
+@import '../helpers.scss';
+
+.project {
+  width: 100%;
+  padding: 0;
+  margin: 1rem 0 3.25rem;
+
+  @include mq(m) {
+    margin: 1rem 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: minmax(225px, 1fr);
+    border: #000 solid 1px;
+    border-radius: 10px;
+  }
+
+  @include mq(l) {
+    box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.project__aside {
+  width: 100%;
+  background: #fff;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include mq(m) {
+    border-radius: 10px 0px 0 10px;
+  }
+}
+
+.project__info {
+  margin-top: 0;
+  padding: 0.75rem 1rem;
+  color: #19131a;
+
+  @include mq(m) {
+    padding: 2rem 3rem;
+    border-left: #000 solid 2px;
+  }
+}
+
+.project__header {
+  font-size: 20px;
+}
+
+.project__title {
+  margin: 0 0 1.5rem;
+  color: #19131a;
+  font-size: 25px
+}
+
+.project__copy {
+  margin: 0 0 1.5rem;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+
+  @include mq(m) {
+    margin: 0 0 1.5rem;
+  }
+}
+
+.project__copy,
+.project__tag-list {
+  color: #4a4949;
+}
+
+.project__action {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 .25rem;
+  cursor: default;
+  list-style: none;
+
+  @include mq(m) {
+    justify-content: start;
+    margin: 0 0 2rem;
+    padding: 0;
+  }
+
+}
+
+.project__list-item {
+  padding: 0;
+  vertical-align: middle;
+
+  @include mq(m) {
+    margin: 0 3rem 0px 0rem;
+  }
+}
+
+.project__tag {
+  margin-bottom: 3rem;
+}
+
+.project__tag-title {
+  margin: 1rem 0 0.25rem;
+  text-align: left;
+  color: #19131a;
+  font-size: 22px;
+}
+
+.project__tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: -0.5rem;
+}

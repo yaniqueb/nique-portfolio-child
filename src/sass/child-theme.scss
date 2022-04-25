@@ -14,10 +14,32 @@
 @import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
 
 // helpers
+@import "./theme/theme-styles.scss/helpers/mixins";
+@import "./theme/theme-styles.scss/helpers/varBreakpoints";
+@import "./theme/theme-styles.scss/helpers/varColors";
 
 // base 
+@import "./theme/theme-styles.scss/base/global.scss";
+@import "./theme/theme-styles.scss/base/reset.scss";
 
 //layouts
 @import "./theme/theme-styles.scss/layouts/navbar.scss";
-//modules
+@import "./theme/theme-styles.scss/layouts/header.scss";
+@import "./theme/theme-styles.scss/layouts/footer.scss";
+@import "./theme/theme-styles.scss/layouts/cta.scss";
+@import "./theme/theme-styles.scss/layouts/hero.scss";
+@import "./theme/theme-styles.scss/layouts/main.scss";
 
+
+//modules
+@import "./theme/theme-styles.scss/modules/box.scss";
+@import "./theme/theme-styles.scss/modules/btn.scss";
+@import "./theme/theme-styles.scss/modules/btnHero.scss";
+@import "./theme/theme-styles.scss/modules/card.scss";
+@import "./theme/theme-styles.scss/modules/form.scss";
+@import "./theme/theme-styles.scss/modules/icon.scss";
+@import "./theme/theme-styles.scss/modules/img.scss";
+@import "./theme/theme-styles.scss/modules/project.scss";
+@import "./theme/theme-styles.scss/modules/section.scss";
+@import "./theme/theme-styles.scss/modules/tag.scss";
+@import "./theme/theme-styles.scss/modules/toggleBtn.scss";
