@@ -1,5 +1,8 @@
 /* ================================= 
   Hero
+  main colors :
+  salmon- #FFA384
+  aqua- #74BDCB
 ==================================== */
 @import '../helpers.scss';
 
@@ -99,7 +102,7 @@
 }
 
 .l-hero__title--highlight {
-  color: #57c1ff;
+  color: #FFA384;
 }
 
 .l-hero__action-container {
