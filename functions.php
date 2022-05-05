@@ -71,7 +71,7 @@ function understrap_default_bootstrap_version( $current_mod ) {
 	return 'bootstrap5';
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
-
+//filter hook
 
 
 /**
@@ -87,7 +87,7 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
-
+//action hook
 // Includes php files from lib folder.
 foreach (glob( dirname(__FILE__) . '/lib/*.php' ) as $file ){
 	include $file;

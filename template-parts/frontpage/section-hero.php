@@ -1,33 +1,4 @@
-<?php
-/**
- * Template Name: Full Width Page
- *
- * Template for displaying a page without sidebar even if a sidebar widget is published.
- *
- * @package Understrap
- */
-
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-
-get_header();
-$container = get_theme_mod( 'understrap_container_type' );
-
-if ( is_front_page() ) {
-	get_template_part( 'global-templates/hero' );
-}
-?>
-
-<div class="wrapper" id="full-width-page-wrapper">
-
-	<div class="<?php echo esc_attr( $container ); ?> px-0" id="content">
-
-		<div class="row">
-
-			<div class="col-md-12 content-area" id="primary">
-
-				<main class="site-main" id="main" role="main">
-					<section id="l-hero" class="l-hero"><div class="l-hero__cover">
+<section id="l-hero" class="l-hero section"><div class="l-hero__cover">
 						<div class="l-hero__info site-wrapper">
 							<div class="l-hero__copy">
 							<p class="l-hero__title l-hero__title--prim">Hello,</p>
@@ -46,7 +17,7 @@ if ( is_front_page() ) {
 											</a>
 										</li>
 										<li class="l-hero__item l-hero__item--social">
-											<a class="l-hero__icon-link" href="https://www.linkedin.com/in/teronbullock/" target="_blank" rel="noopener noreferrer">
+											<a class="l-hero__icon-link" href="https://www.linkedin.com/in/yaniquebullock/" target="_blank" rel="noopener noreferrer">
 												<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
 													<path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
 
@@ -71,30 +42,3 @@ if ( is_front_page() ) {
 						</div>
 					 </div>
 					</section>
-    		
-    
-
-					<?php
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
-					}
-					?>
-
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row end -->
-
-	</div><!-- #content -->
-
-</div><!-- #full-width-page-wrapper -->
-
-<?php
-get_footer();
