@@ -5,22 +5,22 @@
 							</header>
 							<div class="project">
 								<div class="project__aside">
-									<img class="img project__img" src="images/projects/flashcard.jpg" alt="">
+									<img class="img project__img" src="<?php the_filed(image)?>" alt="">
 								</div>
 								<div class="project__info">
 									<header class="project__header">
-										<h3 class="project__title">Flashcard Study App</h3>
+										<h3 class="project__title"><?php the_field(project_title) ?></h3>
 									</header>
-									<p class="project__copy">Web application designed to grant users the ability to make and study from custom flashcards.</p>
+									<p class="project__copy"><?php the_field(project_description_)?></p>
 									<div class="project__tag">
 										<h4 class="project__tag-title">Tech Stack:</h4>
 										<ul class="project__tag-list">
-											<li class="tag-item">Express.js</li>
-											<li class="tag-item">Sequelize (ORM)</li>
+											<li class="tag-item"><?php the_field(tech_stack) ?></li>
+											<!-- <li class="tag-item">Sequelize (ORM)</li>
 											<li class="tag-item">PostgreSQL</li>
 											<li class="tag-item">Express Session</li>
 											<li class="tag-item">JavaScript/ES6</li>
-											<li class="tag-item">SASS</li>
+											<li class="tag-item">SASS</li> -->
 										</ul>
 									</div>
 									<ul class="project__action">

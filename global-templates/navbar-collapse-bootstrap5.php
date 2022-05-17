@@ -25,11 +25,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?php if ( is_front_page() && is_home() ) : ?>
 
-				<h1 class="l-header__title navbar-brand mb-0"><a class="l-header__link" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="l-header__title navbar-brand mb-0">
+					<a class="l-header__link" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
 
 			<?php else : ?>
 
-				<h3 class="l-header__title navbar-brand mb-0"> <a class="l-header__link" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a> Web Developer</h3>
+				<h3 class="l-header__title navbar-brand mb-0">
+					<a class="l-header__link" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a> Web Developer</h3>
 
 			<?php endif; ?>
 
