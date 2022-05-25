@@ -3,7 +3,7 @@
 							<h2 class="cta__title">I'm Ready to help you create something amazing today.</h2>
 							<div class="cta__content">
 								<form class="cta__form" action="https://formspree.io/f/xzbkebwn" method="POST">
-									<div class="cta__form-container">
+									<!-- <div class="cta__form-container">
 										<label class="cta__label">Name</label>
 										<input type="text" name="name" id="name" placeholder="Name" class="cta__input" value="">
 										<label class="cta__label">Email</label>
@@ -19,7 +19,8 @@
 												</path>
 											</svg>
 										</div>
-									</div>
+									</div> -->
+									<?php echo do_shortcode('[contact-form-7 id="74" title="Contact form 1"]'); ?>
 								</form>
 							</div>
 						</div>
