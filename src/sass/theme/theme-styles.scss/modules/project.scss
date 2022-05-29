@@ -14,12 +14,7 @@ project
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: minmax(225px, 1fr);
-    border: #000 solid 1px;
     border-radius: 10px;
-  }
-
-  @include mq(l) {
-    box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.7);
   }
 }
 
@@ -29,16 +24,13 @@ project
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
-
-  @include mq(m) {
-    border-radius: 10px 0px 0 10px;
-  }
 }
 
 .project__info {
   margin-top: 0;
   padding: 0.75rem 1rem;
   color: #19131a;
+  background-color: #E7F2F8;
 
   @include mq(m) {
     padding: 2rem 3rem;
