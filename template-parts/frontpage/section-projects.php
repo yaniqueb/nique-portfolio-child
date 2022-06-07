@@ -6,11 +6,11 @@ $tech_stack = get_field('tech_stack', get_the_id());
 
 ?>
 <section id="projects" class="section section--default">
-						<div class="section__container site-wrapper">
-							<header class="section__header">
-								<h2 class="section__title">Projects</h2>
-							</header>
-							
+	<div class="section__container site-wrapper">
+		<header class="section__header">
+			<h2 class="section__title">Projects</h2>
+		</header>
+		<div class="section--gallery section__box--row">	
 							<?php
 							// add query obj to var
 							$homepageProjects = new WP_Query(array(
@@ -25,6 +25,7 @@ $tech_stack = get_field('tech_stack', get_the_id());
 							// rest the post obj
 							wp_reset_postdata();
 						?>
-						</div>
-					</section>
-					<?php
+		</div>		
+	</div>
+</section>
+	<?php
