@@ -41,6 +41,21 @@ project
   &:hover &__image:hover {
     transform: scale(1.2);
   }
+
+  // Bring in text on hover
+  &:hover .project__info_section {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+
+  // Bring in call to action
+  &:hover .project__action {
+    opacity: 1;
+    transition-delay: 3s;
+    transition: 0.25s;
+	  transition-property: bottom;
+    transition: opacity 3s;
+  }
 }
 
 .project__image {
@@ -72,20 +87,17 @@ project
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
   text-align: center;
-  z-index: 1;
+  z-index: 1; 
+}
+
+.project__info_section {
+  opacity: 0;
   color: #fff;
   transform: translateY(-20%);
   transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
-    transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-  transition-delay: 300ms;
-
-  // Bring in text on hover
-  &:hover {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+  transition-delay: 300ms; 
 }
 
 .project__header {
@@ -119,9 +131,10 @@ project
 	justify-content: space-between;
 	align-items: center;
 	bottom: 0px;
-	transition: 0.4s;
-	transition-property: bottom;
-
+  opacity: 0;
+	// transition: 0.4s;
+	// transition-property: bottom;
+  // transition: opacity 0.5s;
 }
 
 .project__list-item {

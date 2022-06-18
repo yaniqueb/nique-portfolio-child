@@ -77,8 +77,9 @@
 		<!-- end section__box  -->
 		<div class="section__box">
 			<div class="about__copy">
-				<p>Hello! I'm Yanique, a Web Developer based in the New York State area.</p>
-				<p>I am Goal driven, a life long learner and a Weekend Cyclist. I have a passion for learning new technologies and creating phenomenal things that live on the web.</p>
+				<p>Hi! I'm Yanique. As a web developer with a can-do attitude, I believe there's more than one way to bake a cake! 😉</p>
+				<p>In addition to being proficient with Sass, Bootstrap, HTML, and CSS,  I'm developing my JavaScript and PHP skills while getting cozy with WordPress.</p>
+				<p>Although new to the field of web development, I bring my communication skills, attention to detail, and problem-solving mindset to this party🥂.</p>
 				<p>Please take a moment to check out a few of my projects <a class="section__link" href="#projects">here</a>.
 				<br>If you have any question, you can contact me&nbsp;<a class="section__link" href="#cta">here</a>.</p>
 			</div>
