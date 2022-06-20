@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper py-0" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?> px-0" id="content">
 
