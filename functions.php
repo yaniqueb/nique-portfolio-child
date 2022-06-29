@@ -9,6 +9,16 @@
 defined( 'ABSPATH' ) || exit;
 
 
+/**
+ * All of our main theme setup.
+ */
+// var_dump(get_stylesheet_directory_uri(  ));
+// function ybp_theme_setup() {
+// 	define( 'ybp_url' , 'http://niqueportfolio.com/');
+// 	define('ybp_theme_url', '')
+// }
+
+// ybp_theme_setup();
 
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
@@ -71,7 +81,7 @@ function understrap_default_bootstrap_version( $current_mod ) {
 	return 'bootstrap5';
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
-
+//filter hook
 
 
 /**
@@ -86,4 +96,11 @@ function understrap_child_customize_controls_js() {
 		true
 	);
 }
+
+
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+//action hook
+// Includes php files from lib folder.
+foreach (glob( dirname(__FILE__) . '/lib/*.php' ) as $file ){
+	include $file;
+}
