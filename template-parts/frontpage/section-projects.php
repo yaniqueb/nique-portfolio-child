@@ -10,7 +10,7 @@ $tech_stack = get_field('tech_stack', get_the_id());
 		<header class="section__header">
 			<h2 class="section__title">Projects</h2>
 		</header>
-		<div class="section--gallery section__box--row">	
+		<div class="section__gallery">	
 							<?php
 							// add query obj to var
 							$homepageProjects = new WP_Query(array(
