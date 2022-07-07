@@ -6,7 +6,7 @@ let header = document.getElementById("wrapper-navbar");
 window.addEventListener('scroll', function(e) {
   e.preventDefault();
 
-  if(window.scrollY >= 70 && window.innerWidth > 769) {
+  if(window.scrollY >= 70 && window.innerWidth > 767) {
 
     // remove class from header
     header.classList.remove('top');
