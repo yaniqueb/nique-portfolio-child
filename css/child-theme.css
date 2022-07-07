@@ -16339,7 +16339,7 @@ template {
     position: static;
     top: unset;
     left: unset;
-    background-color: none;
+    background-color: unset;
   }
 }
 
